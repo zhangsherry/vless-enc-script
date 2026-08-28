@@ -137,7 +137,6 @@ cat > "$CONFIG_FILE" <<EOF
   "routing": {
     "rules": [
       {
-        "type": "field",
         "protocol": [
           "bittorrent"
         ],
@@ -147,12 +146,10 @@ cat > "$CONFIG_FILE" <<EOF
         "ip": [
           "geoip:private"
         ],
-        "type": "field",
         "outboundTag": "BLOCK"
       },
       {
         "port": "25,135,137,138,139,445,465,587",
-        "type": "field",
         "outboundTag": "BLOCK"
       }
     ],
